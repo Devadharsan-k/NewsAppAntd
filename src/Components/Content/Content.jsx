@@ -9,19 +9,6 @@ const Content = ({ selectedCategory }) => {
   const [article, setArticle] = useState([]);
   const [loading, setLoading] = useState(true);
 
-  const steps = [
-    {
-      title: "Choose Your Category",
-      description: "News will be displayed based on your selected option",
-      target: () => ref1.current,
-    },
-    {
-      title: "News Articles",
-      description: "Your desired news will be displayed here",
-      target: () => ref2.current,
-    },
-  ];
-
   useEffect(() => {
     let getData = async () => {
       setLoading(true);
